@@ -27,7 +27,6 @@ python convert.py -s data/you_data
 ```
 python train.py -s data/you_data -m output
 ```
-
 ```
 python main.py --config.yaml
 ```
