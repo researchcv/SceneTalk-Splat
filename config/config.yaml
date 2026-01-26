@@ -1,0 +1,71 @@
+#配置文件
+
+# 项目路径配置
+paths:
+  # 输入数据路径
+  source_path: "data/lerf"  # COLMAP数据集路径
+  model_path: "output/lerf"  # 训练好的3DGS模型路径
+  
+  # 输出路径
+  output_root: "output/lerf_analysis"  # 总输出目录
+  
+# YOLO检测配置
+yolo:
+  model_name: "yolov8x.pt"  # 模型选择: yolov8n/s/m/l/x
+  conf_threshold: 0.25      # 置信度阈值
+  iou_threshold: 0.45       # NMS IoU阈值
+  device: "cuda"            # 设备: cuda 或 cpu
+  classes: null             # 检测类别过滤，null表示检测所有类别
+  
+# 3D高斯渲染配置
+gaussian:
+  sh_degree: 3              # 球谐函数阶数
+  white_background: false   # 是否使用白色背景
+  load_iteration: -1        # 加载的迭代次数，-1表示最新
+  
+# 投影配置
+projection:
+  depth_sample_step: 10     # 深度采样步长（像素）
+  min_visible_points: 4     # 最小可见点数
+  visibility_threshold: 0.3 # 可见性阈值
+  use_gaussian_depth: true  # 是否使用高斯深度图
+  
+# LLM配置
+llm:
+  provider: "openai"        # 提供商: openai, anthropic, 或 local
+  model: "gpt-4-turbo"      # 模型名称
+  api_key: "your-api-key"   # API密钥
+  temperature: 0.7          # 温度参数
+  max_tokens: 2000          # 最大token数
+  enable_llm: false          # 是否启用LLM功能
+  
+# 可视化配置
+visualization:
+  image_format: "png"       # 输出图像格式
+  dpi: 150                  # 图像DPI
+  bbox_thickness: 2         # 检测框线宽
+  font_scale: 0.6           # 字体大小
+  create_comparison: true   # 是否生成对比图
+  create_video: false       # 是否生成视频
+  
+# 场景理解配置
+scene_understanding:
+  distance_threshold: 2.0   # 空间关系距离阈值（米）
+  min_object_size: 0.1      # 最小物体尺寸（米）
+  spatial_relations:        # 需要计算的空间关系
+    - "on"
+    - "under"
+    - "near"
+    - "left"
+    - "right"
+    - "front"
+    - "back"
+    
+# 实验配置
+experiment:
+  save_intermediate: true   # 是否保存中间结果
+  compute_metrics: true     # 是否计算评估指标
+  num_novel_views: 10       # 生成的新视角数量
+  skip_train_views: false   # 是否跳过训练视角
+  skip_test_views: false    # 是否跳过测试视角
+

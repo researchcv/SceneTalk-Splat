@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Distribution / Packaging
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+
+# Virtual Environment
+venv/
+env/
+.env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Model Weights (too large for GitHub, download separately)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Output Directories
+output/
+results/
+logs/
+tensorboard*/
+screenshots/
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Data (user should provide their own)
+data/
