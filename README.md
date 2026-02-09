@@ -17,6 +17,13 @@ pip install -r requirements.txt
 pip install submodules/diff-gaussian-rasterization
 pip install submodules/simple-knn
 ```
+## Datasets
+In the experiments section of our paper, we primarily utilized two datasets: the 3D-OVS dataset and the LERF dataset.
+
+The 3D-OVS dataset is accessible for download via the following link: [Download 3D-OVS Dataset](https://drive.google.com/drive/folders/1kdV14Gu5nZX6WOPbccG7t7obP_aXkOuC?usp=sharing) .
+
+For the LERF dataset, we have expanded upon its existing collection and also provided the corresponding COLMAP data. These resources can be accessed through this link: [Download Expanded LERF Dataset and COLMAP Data](https://drive.google.com/file/d/1QF1Po5p5DwTjFHu6tnTeYs_G0egMVmHt/view?usp=sharing).
+
 ### Usage
 + First, you need to select the API_KEY and URL of the large language model you like in the configuration file
 + Second,  mkdir data,  then, Put the image in data
@@ -30,3 +37,4 @@ python train.py -s data/you_data -m output
 ```
 python main.py --config.yaml
 ```
+### S-YOLOv8 will be released publicly after the paper is accepted.
