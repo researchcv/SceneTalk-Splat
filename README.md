@@ -1,11 +1,11 @@
-# SceneTalk-Splat: Enabling Conversational Interaction with 3D Gaussian Splatting and Large Language Models
+# Enhancing 3D Scene Understanding through Conversational Interaction with Gaussian Splatting and Language Models
 
 ### Installation
 + Install `Python >= 3.10`.
 + Install `torch >= 2.4`. We have tested on `torch==2.4.1+cu124`, but other versions should also work fine.
 + Clone our repo
 ```
-https://github.com/Lee-Luc/SceneTalk-Splat.git --recursive
+https://github.com/researchcv/SceneTalk-Splat.git --recursive
 ```
 + Install dependencies:
 ```
@@ -30,4 +30,3 @@ python train.py -s data/you_data -m output
 ```
 python main.py --config.yaml
 ```
-### I'm very sorry, but due to the large file size of the S-YOLOv8 model, it cannot be submitted to the repository for the time being. A download link will be provided later.Therefore, to make our method available to readers, we used the existing YOLOv8 instead. This is only temporary, and we are finding ways to submit our own S-YOLOv8 model.
