@@ -22,7 +22,7 @@ In the experiments section of our paper, we primarily utilized two datasets: the
 
 The 3D-OVS dataset is accessible for download via the following link: [Download 3D-OVS Dataset](https://drive.google.com/drive/folders/1kdV14Gu5nZX6WOPbccG7t7obP_aXkOuC?usp=sharing) .
 
-For the LERF dataset, we have expanded upon its existing collection and also provided the corresponding COLMAP data. These resources can be accessed through this link: [Download Expanded LERF Dataset and COLMAP Data](https://drive.google.com/file/d/1QF1Po5p5DwTjFHu6tnTeYs_G0egMVmHt/view?usp=sharing).
+The LERF dataset can be downloaded via the following link: [Download Expanded LERF Dataset](https://drive.google.com/file/d/1QF1Po5p5DwTjFHu6tnTeYs_G0egMVmHt/view?usp=sharing).
 
 ### Usage
 + First, you should set the API_KEY and URL for the large language model in config.yaml.
