@@ -5,7 +5,7 @@
 + Install `torch >= 2.4`. We have tested on `torch==2.4.1+cu124`, but other versions should also work fine.
 + Clone our repo
 ```
-https://github.com/researchcv/SceneTalk-Splat.git --recursive
+ git clone https://github.com/researchcv/SceneTalk-Splat.git --recursive
 ```
 + Install dependencies:
 ```
